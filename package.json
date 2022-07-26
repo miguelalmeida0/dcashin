@@ -1,6 +1,7 @@
 {
   "name": "faucet_assets",
   "version": "0.1.0",
+  "homepage": "https://miguelalmeida0.github.io",
   "description": "Internet Computer starter application",
   "keywords": [
     "Internet Computer",
@@ -9,6 +10,8 @@
     "Canister"
   ],
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack",
     "prebuild": "npm run copy:types",
     "start": "webpack serve --mode development --env development",
@@ -48,6 +51,7 @@
     "@dfinity/auth-client": "^0.10.3",
     "@dfinity/authentication": "^0.10.3",
     "@dfinity/identity": "^0.10.3",
+    "gh-pages": "^4.0.0",
     "lit-html": "^1.4.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
