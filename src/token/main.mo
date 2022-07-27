@@ -5,9 +5,9 @@ import Principal "mo:base/Principal";
 
 actor Token {
 
-  let owner : Principal = Principal.fromText("<REPLACE WITH YOUR OWN COMMAND LINE PRINCIPAL SEE README>");
+  let owner : Principal = Principal.fromText("4yrf7-sm2t3-2q35l-f4lvd-iac6p-pf3xn-nic4f-glorp-2uhec-4bkou-iae");
   let totalSupply : Nat = 1000000000000000;
-  let symbol : Text = "DANG";
+  let symbol : Text = "FADED";
 
   private stable var balanceEntries : [(Principal, Nat)] = [];
   private var balances = HashMap.HashMap<Principal, Nat>(1, Principal.equal, Principal.hash);
